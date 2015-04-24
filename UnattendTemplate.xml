@@ -115,7 +115,7 @@
                     Must be reset with final Sysprep.
                 -->
                 <AdministratorPassword>
-                    <Value>Passw0rd</Value>
+                    <Value>Passw0rd!</Value>
                     <PlainText>true</PlainText>
                 </AdministratorPassword>
                 <!-- The following is needed on a client OS -->
@@ -132,7 +132,7 @@
             </UserAccounts>
             <AutoLogon>
                 <Password>
-                    <Value>Passw0rd</Value>
+                    <Value>Passw0rd!</Value>
                     <PlainText>true</PlainText>
                 </Password>
                 <Enabled>true</Enabled>
