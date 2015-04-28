@@ -84,7 +84,7 @@ in the Autounattend.flp floppy image. The default is Windows Server 2012 R2 Stan
 
 This can be easily changed here:
 
-https://github.com/cloudbase/windows-openstack-imaging-tools/blob/05b03fa64dc3d8e5c2c5af97c94aecea61616365/Autounattend.xml#L58
+https://github.com/esimone74/windows-openstack-imaging-tools/blob/v1.0.0/Autounattend.xml#L63
 
 For Windows 8 and above, uncomment the following two options:
 

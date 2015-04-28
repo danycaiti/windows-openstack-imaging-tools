@@ -68,7 +68,7 @@ function installVirtIOToolsPre2012($virtioDriversPath) {
 }
 
 function getHypervisor() {
-    $checkHypervisorExeUrl = "https://github.com/cloudbase/checkhypervisor/raw/master/bin/checkhypervisor.exe"
+    $checkHypervisorExeUrl = "https://github.com/esimone74/windows-openstack-imaging-tools/raw/v1.0.0/bin/checkhypervisor.exe"
     $checkHypervisorExePath = "$ENV:Temp\checkhypervisor.exe"
     Invoke-WebRequest -Uri $checkHypervisorExeUrl -OutFile $checkHypervisorExePath
 
@@ -86,7 +86,7 @@ $logonScriptPath = "$ENV:SystemRoot\Temp\Logon.ps1"
 try
 {
     $Host.UI.RawUI.WindowTitle = "Downloading Logon script..."
-    $baseUrl = "https://raw.github.com/cloudbase/windows-openstack-imaging-tools/master"
+    $baseUrl = "https://github.com/esimone74/windows-openstack-imaging-tools/raw/v1.0.0"
     (new-object System.Net.WebClient).DownloadFile("$baseUrl/Logon.ps1", $logonScriptPath)
 
     $hypervisorStr = getHypervisor

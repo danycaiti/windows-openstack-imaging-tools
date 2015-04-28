@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 try
 {
     $temp = "$ENV:SystemRoot\Temp"
-    $baseUrl = "https://raw.github.com/cloudbase/windows-openstack-imaging-tools/master"
+    $baseUrl = "https://github.com/esimone74/windows-openstack-imaging-tools/raw/v1.0.0"
 
     # Put the wallpaper in place
     $wallpaper_dir = "$ENV:SystemRoot\web\Wallpaper\Cloudbase"
@@ -13,7 +13,7 @@ try
     }
 
     $Host.UI.RawUI.WindowTitle = "Downloading wallpaper..."
-    $wallpaper = "Wallpaper-Cloudbase-2013.png"
+    $wallpaper = "Wallpaper.png"
     (new-object System.Net.WebClient).DownloadFile("$baseUrl/$wallpaper", "$wallpaper_dir\$wallpaper")
 
     $Host.UI.RawUI.WindowTitle = "Configuring GPOs..."
